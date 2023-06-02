@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: Trebuchet MS, Helvetica;
+}
+
+/* Шапка сайта */
+
+header {
+    position: fixed;
+    width: 25%;
+    height: 120vh;
+    background: #7fb1b5;
+    font-size: 0.80em;
+
+}
+
+header #sidebar {
+    position: relative;
+    margin: 0 5%;
+    text-align: right;
+    top: 60%;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+
+.nav {
+    position: relative;
+    margin: 0 5%;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    position: relative;
+    margin: 7.2em 0;
+}
+
+a {
+    line-height: 5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    color: #1d216b;
+    display: block;
+    transition: all ease-out 300ms;
+}
+
+.nav ul li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.2em;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, #5e42a6, #b74e91);
+}
+
+&.active a {
+    color: white;
+}
+
+&:not(.active)::after {
+    opacity: 0.2;
+}
+
+&:not(.active):hover a {
+    color: #017c82;
+}
+
+&::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2em;
+    background: black;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, #5e42a6, #b74e91)
+}
+
+a {
+    line-height: 5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    color: #1d216b;
+    display: block;
+    transition: all ease-out 300ms;
+}
+
+#top {
+    width: 100%;
+    background-blend-mode: multiply;
+    background-color: #308f96;
+    background-size: cover;
+    text-align: right;
+    color: #fff;
+}
+
+@media (min-width: 1001px) {
+    #top {
+        font-size: 3em;
+        height: 1000px;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 651px) {
+    #top {
+        font-size: 2em;
+        height: 600px;
+    }
+}
+
+@media (max-width: 650px) {
+    #top {
+        font-size: 1.3em;
+        padding-top: 50%;
+        height: 500px;
+    }
+}
+
+@media (max-width: 450px) {
+    #top {
+        font-size: 0.9em;
+    }
+}
+
+#top h1 {
+    padding-top: 20%;
+}
+#top h2 {
+    padding-top: 20%;
+}
+
+#top h3 {
+    color: #ccc;
+}
+
+/* Блок с возможностями */
+
+#main {
+    float: right;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+@media (min-width: 1401px) {
+    #main {
+        padding: 100px 10%;
+        width: 60%;
+    }
+}
+
+#main h2 {
+    font-size:3em
+}
+
+#main span {
+    color: #a0a0a0
+}
+
+#overview {
+    float: right;
+    background-color: #308f96;
+    border-top: 2px solid silver;
+    color: #ccc;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+@media (min-width: 1401px) {
+    #overview {
+        padding: 80px 10%;
+        width: 60%;
+    }
+}
+
+#overview h2 {
+    font-size: 3em
+}
+
+#overview span {
+    color: #a0a0a0
+}
+
+/* Блок с преимуществами */
+
+.container .round {
+    width:260px;
+    position: absolute;
+    top: 0;
+    right: 200px;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 140vh;
+}
+
+.input-form label {
+    font-size: 20px;
+}
+
+.input-form .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+    width: 800px;
+}
+
+form {
+    display: table;
+    margin: 5% auto;
+    margin-bottom: 20px;
+    background-color: #7fb1b5;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(67, 60, 71);
+    text-align: left;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container input[type="text"],
+.input-container input[type="submit"] {
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    margin: 1.5% auto;
+}
+
+input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #308f96;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+

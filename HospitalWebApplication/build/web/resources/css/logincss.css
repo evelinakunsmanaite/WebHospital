@@ -1,0 +1,104 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 19 мая 2023 г., 08:16:09
+    Author     : Administrator
+*/
+
+body{
+    background-color: #308f96;
+}
+h2{
+    font-size:40px;
+    color: #32a852;
+}
+
+.registration {
+    padding: 30px 60px;
+    background: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius:20px;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    opacity: 0.5;
+}
+
+.registration .item {
+    border-radius:20px;
+    border-color: green;
+    margin-bottom:35px;
+    padding:20px 30px;
+}
+
+.submit{
+    border-radius:10px;
+    padding:10px 20px;
+    font-size:18px;
+    background-color:#32a852;
+    color:white;
+    border-color: green;
+    margin-top:20px;
+}
+
+
+li {
+    position: relative;
+    margin: 7.2em 0;
+}
+
+a {
+    line-height: 5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    color: #1d216b;
+    display: block;
+    transition: all ease-out 300ms;
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 0.2em;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, #5e42a6, #b74e91);
+}
+
+&.active a {
+    color: white;
+}
+
+&:not(.active)::after {
+    opacity: 0.2;
+}
+
+&:not(.active):hover a {
+    color: #017c82;
+}
+
+&::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2em;
+    background: black;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, #5e42a6, #b74e91)
+}
+a {
+    line-height: 5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    color: #1d216b;
+    display: block;
+    transition: all ease-out 300ms;
+}
